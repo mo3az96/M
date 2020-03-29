@@ -176,6 +176,10 @@
     .banner {
         margin-top: 30px;
 
+        @include xs {
+            margin-top: 15px;
+        }
+
         img {
             transform: scale(1.05);
         }

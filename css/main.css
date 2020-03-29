@@ -358,16 +358,6 @@ html[dir=rtl] .nav-li:last-of-type {
   }
 }
 
-.fixed-header {
-  padding: 10px 0;
-}
-.fixed-header.scroll-head {
-  padding: 5px 0;
-}
-.fixed-header.scroll-head .logo {
-  width: 85px;
-}
-
 nav .close-btn {
   font-size: 20px;
   color: rgba(18, 18, 18, 0.7);
@@ -967,7 +957,7 @@ header {
 }
 @media (max-width: 1199px) {
   header {
-    height: 133px;
+    height: 86px;
   }
 }
 header .fixed-header {
@@ -983,12 +973,27 @@ header .fixed-header {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+@media (max-width: 767px) {
+  header .fixed-header {
+    padding: 10px 0;
+  }
+}
 header .fixed-header.scroll-head {
   padding: 10px 0;
   border-top: 1px solid #1c1c1c;
 }
+@media (max-width: 767px) {
+  header .fixed-header.scroll-head {
+    padding: 5px 0;
+  }
+}
 header .fixed-header.scroll-head .logo {
   width: 100px;
+}
+@media (max-width: 767px) {
+  header .fixed-header.scroll-head .logo {
+    width: 75px;
+  }
 }
 header .fixed-header.scroll-head .mega-menu {
   top: 97.89px;
@@ -1011,7 +1016,7 @@ header .logo {
 }
 @media (max-width: 1199px) {
   header .logo {
-    width: 120px;
+    width: 85px;
   }
 }
 header ._2nd-sec {
@@ -1269,6 +1274,11 @@ html[dir=rtl] .main-banner-head {
 .sec-banners-cont .banner {
   margin-top: 30px;
 }
+@media (max-width: 767px) {
+  .sec-banners-cont .banner {
+    margin-top: 15px;
+  }
+}
 .sec-banners-cont .banner img {
   transform: scale(1.05);
 }
@@ -1431,6 +1441,12 @@ footer .last-footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 767px) {
+  footer .last-footer {
+    margin-top: 40px;
+    padding-bottom: 15px;
+  }
 }
 @media (max-width: 992px) {
   footer .last-footer {

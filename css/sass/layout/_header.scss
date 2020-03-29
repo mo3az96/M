@@ -2,7 +2,7 @@ header {
     height: 168px;
 
     @include md {
-        height: 133px;
+        height: 86px;
     }
 
     .fixed-header {
@@ -15,12 +15,24 @@ header {
         z-index: 99;
         @include transition(all 0.3s ease-in-out);
 
+        @include xs {
+            padding: 10px 0;
+        }
+
         &.scroll-head {
             padding: 10px 0;
             border-top: 1px solid #1c1c1c;
 
+            @include xs {
+                padding: 5px 0;
+            }
+
             .logo {
                 width: 100px;
+
+                @include xs {
+                    width: 75px;
+                }
             }
 
             .mega-menu {
@@ -50,7 +62,7 @@ header {
         @include transition(all 0.3s ease-in-out);
 
         @include md {
-            width: 120px;
+            width: 85px;
         }
     }
 

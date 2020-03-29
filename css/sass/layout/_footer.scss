@@ -112,6 +112,10 @@ footer {
         align-items: center;
         justify-content: space-between;
 
+        @include xs {
+            margin-top: 40px;
+            padding-bottom: 15px;
+        }
 
 
         @include sm {
