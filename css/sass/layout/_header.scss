@@ -1,0 +1,133 @@
+header {
+    height: 168px;
+
+    @include md {
+        height: 133px;
+    }
+
+    .fixed-header {
+        background-color: $black;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 99;
+        @include transition(all 0.3s ease-in-out);
+
+        &.scroll-head {
+            padding: 10px 0;
+            border-top: 1px solid #1c1c1c;
+
+            .logo {
+                width: 100px;
+            }
+
+            .mega-menu {
+                top: 97.89px;
+
+            }
+
+            .mega-btn {
+                &:hover {
+                    &::after {
+                        height: 75px;
+                    }
+                }
+            }
+        }
+    }
+
+    .mo-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 165px;
+        display: block;
+        @include transition(all 0.3s ease-in-out);
+
+        @include md {
+            width: 120px;
+        }
+    }
+
+    ._2nd-sec {
+        display: flex;
+        align-items: center;
+    }
+
+    .mo-user-nav {
+        display: flex;
+        margin-left: 50px;
+
+        #{$rtl} & {
+            margin-right: 50px;
+            margin-left: 0;
+        }
+
+        @media (min-width: 1440px) {
+            margin-left: 170px;
+
+            #{$rtl} & {
+                margin-right: 170px;
+                margin-left: 0;
+            }
+        }
+
+        @include md {
+            margin: 0;
+        }
+    }
+
+    .user-anchor {
+        font-size: 24px;
+        color: $fff;
+        @include transition(all 0.3s ease-in-out);
+        margin-right: 35px;
+
+        #{$rtl} & {
+            margin-right: 0;
+            margin-left: 35px;
+
+            @include md {
+                margin-right: 0;
+                margin-left: 20px;
+            }
+        }
+
+        @include md {
+            margin-right: 20px;
+        }
+
+        &:hover {
+            color: $gold;
+
+            .count {
+                animation: vibe 0.7s ease forwards;
+            }
+        }
+    }
+
+    .mo-cart-icon {
+        margin: 0;
+        position: relative;
+    }
+
+    .count {
+        position: absolute;
+        top: -3px;
+        right: -7px;
+        width: 15px;
+        height: 15px;
+        color: $black;
+        font-size: 12px;
+        font-family: med;
+        background-color: $gold;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 15px;
+    }
+}

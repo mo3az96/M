@@ -1,0 +1,121 @@
+.Product-slider {
+    .owl-nav {
+        width: 0;
+        height: 0;
+
+        button[class^=owl-] {
+            position: absolute;
+            top: 153px;
+            outline: none;
+            border: none;
+            color: #bdbdbd;
+            font-size: 24px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.owl-next {
+                left: -50px;
+            }
+
+            &.owl-prev {
+                right: -50px;
+            }
+
+            &:hover {
+                color: $black;
+            }
+        }
+    }
+
+    .owl-dots {
+        display: none;
+        align-items: center;
+        justify-content: center;
+        margin-top: 25px;
+
+        @include xs {
+            display: flex;
+        }
+
+        .owl-dot {
+            background: $black;
+            outline: none;
+            border: none;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            margin: 0 3px;
+            @include transition(all 0.3s ease-in-out);
+
+            &.active {
+                background: $gold;
+                pointer-events: none;
+            }
+
+            &:hover {
+                background: $gold;
+            }
+        }
+    }
+}
+
+.product {
+    width: 100%;
+    margin: auto;
+    padding-top: 5px;
+
+    .pro {
+        display: block;
+        width: 100%;
+    }
+
+    .item-img {
+        max-width: 100%;
+        margin: auto;
+        height: 330px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            @include transition(all 0.5s ease-in-out);
+            backface-visibility: hidden;
+        }
+
+        &:hover {
+            img {
+                transform: translateY(-5px);
+            }
+        }
+    }
+
+    .pro-name {
+        width: max-content;
+        max-width: 100%;
+        font-size: 16px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        color: $black;
+        @include transition(all 0.5s ease-in-out);
+        margin-top: 27px;
+        margin-bottom: 7px;
+
+        &:hover {
+            color: $gold;
+        }
+    }
+
+    .mo-price {
+        font-size: 18px;
+        color: $black;
+        font-family: bold;
+        margin-right: 6px;
+    }
+
+    .mo-old-price {
+        font-size: 18px;
+        color: #787878;
+        text-decoration: line-through;
+    }
+}

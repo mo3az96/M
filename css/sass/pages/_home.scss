@@ -1,0 +1,249 @@
+.main-banner-cont {
+    margin-top: 20px;
+
+    @include xs {
+        margin-top: 15px;
+    }
+}
+
+.banner {
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        @include transition(all 0.5s ease-in-out);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        backface-visibility: hidden;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background-image: -webkit-gradient(linear, left top, right top, from(transparent), to(rgba(255, 255, 255, 0.7)));
+        background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.7));
+        z-index: 1;
+        cursor: pointer;
+    }
+
+    &:hover {
+        &:before {
+            -webkit-animation: shape 0.7s linear;
+            animation: shape 0.7s linear;
+        }
+
+        img {
+            transform: scale(1.07);
+        }
+    }
+
+}
+
+.banner-info {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sub-head {
+    font-size: 36px;
+    color: $fff;
+    text-transform: uppercase;
+
+    @include xs {
+        font-size: 25px;
+    }
+
+    &::after,
+    &::before {
+        content: "-";
+        margin: 0 10px;
+    }
+}
+
+.main-banner-head {
+    text-transform: uppercase;
+    font-size: 120px;
+    font-family: bold;
+    color: $fff;
+    letter-spacing: 10px;
+    line-height: 80px;
+    margin-top: 13px;
+    margin-bottom: 47px;
+
+    @include xs {
+        font-size: 40px;
+        line-height: unset;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+}
+
+.shop-now-btn {
+    text-transform: uppercase;
+    width: 200px;
+    height: 60px;
+    background-color: $fff;
+    color: $black;
+    font-size: 18px;
+    font-family: med;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    position: relative;
+    @include transition(all 0.3s ease-in-out);
+
+    @include xs {
+        width: 100px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: $gold;
+        -webkit-transform: scaleY(0);
+        transform: scaleY(0);
+        -webkit-transform-origin: 50%;
+        transform-origin: 50%;
+        @include transition(all 0.3s ease-in-out);
+    }
+
+    &:hover {
+        color: $fff;
+
+        &::before {
+            -webkit-transform: scaleY(1);
+            transform: scaleY(1)
+        }
+    }
+}
+
+.banner-head {
+    font-size: 48px;
+    font-family: bold;
+    text-transform: uppercase;
+    color: $fff;
+
+    &:after {
+        display: block;
+        content: "";
+        background-color: $fff;
+        width: 34px;
+        height: 2px;
+        margin: 27px auto 0;
+
+        @include xs {
+            margin: 10px auto 0;
+        }
+    }
+
+    @include xs {
+        font-size: 35px;
+    }
+}
+
+.sec-banners-cont {
+    .banner {
+        margin-top: 30px;
+
+        img {
+            transform: scale(1.05);
+        }
+
+        &:hover {
+            img {
+                transform: scale(1);
+            }
+        }
+    }
+}
+
+.four-banners-cont {
+    .banner-head {
+        font-size: 36px;
+    }
+
+    .banner {
+        margin-top: 30px;
+
+        @include xs {
+            margin-top: 15px;
+        }
+
+        &:hover {
+            img {
+                transform: scale(1.07) rotate(5deg);
+            }
+        }
+    }
+
+    .col-md-3 {
+        &:last-of-type {
+            .banner {
+                margin-top: 30px;
+
+                @include xs {
+                    margin-top: 15px;
+                }
+
+                &::before {
+                    display: none;
+                }
+
+                &:hover {
+                    img {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+.new-arrival {
+    margin-top: 100px;
+
+    @include xs {
+        margin-top: 35px;
+    }
+}
+
+.sec-head {
+    text-align: center;
+    font-size: 36px;
+    color: $black;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+
+    @include xs {
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+}
