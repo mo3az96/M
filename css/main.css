@@ -55,6 +55,7 @@
 body {
   position: relative;
   font-family: tajwal;
+  overflow: hidden;
 }
 body::-webkit-scrollbar {
   background-color: #fff;
@@ -465,6 +466,11 @@ nav .close-btn {
   width: 0;
   height: 0;
 }
+@media (max-width: 767px) {
+  .Product-slider .owl-nav {
+    display: none;
+  }
+}
 .Product-slider .owl-nav button[class^=owl-] {
   position: absolute;
   top: 153px;
@@ -524,9 +530,20 @@ nav .close-btn {
   margin: auto;
   padding-top: 5px;
 }
+@media (max-width: 767px) {
+  .product {
+    width: 330px;
+    margin: auto;
+  }
+}
 .product .pro {
   display: block;
   width: 100%;
+}
+@media (max-width: 767px) {
+  .product .item-info {
+    text-align: center;
+  }
 }
 .product .item-img {
   max-width: 100%;
@@ -560,6 +577,14 @@ nav .close-btn {
   transition: all 0.5s ease-in-out;
   margin-top: 27px;
   margin-bottom: 7px;
+}
+@media (max-width: 767px) {
+  .product .pro-name {
+    justify-content: center;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .product .pro-name:hover {
   color: #d3b787;
@@ -627,11 +652,9 @@ nav .close-btn {
 }
 .mega-btn:hover::after {
   height: 99px;
-  transition-delay: 0s;
 }
 .mega-btn:hover .mega-menu {
   transform: scaleY(1);
-  transition-delay: 0.15s;
 }
 .mega-btn:after {
   width: 100%;
@@ -645,11 +668,10 @@ nav .close-btn {
   justify-content: center;
   overflow: hidden;
   align-items: flex-end;
-  -moz-transition: all 0.2s ease-in-out;
-  -o-transition: all 0.2s ease-in-out;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  transition-delay: 0.3s;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .mega-menu {
@@ -658,10 +680,10 @@ nav .close-btn {
   top: 168px;
   width: 100vw;
   background-color: #121212;
-  -moz-transition: all 0.4s ease-in-out;
-  -o-transition: all 0.4s ease-in-out;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   border-top: 1px solid #1c1c1c;
   transform-origin: top;
   transform: scaleY(0);
@@ -705,6 +727,226 @@ html[dir=rtl] .mega-li:last-of-type {
   margin-bottom: 13px;
 }
 
+.loader {
+  background-color: #fff;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  margin-top: 0px;
+  top: 0px;
+  z-index: 9999999;
+  opacity: 1 !important;
+}
+
+#loading-center {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+#loading-center-absolute {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 150px;
+  width: 150px;
+  margin-top: -75px;
+  margin-left: -75px;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.object {
+  width: 20px;
+  height: 20px;
+  background-color: #aaaaaa;
+  position: absolute;
+  left: 65px;
+  top: 65px;
+}
+
+.object:nth-child(2n+0) {
+  margin-right: 0px;
+}
+
+.object:nth-of-type(odd) {
+  background-color: #757575;
+}
+.object:nth-of-type(even) {
+  background-color: #121212;
+}
+.object:nth-of-type(9) {
+  background-color: #d3b787;
+}
+
+#object_one {
+  -webkit-animation: object_one 2s infinite;
+  animation: object_one 2s infinite;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+#object_two {
+  -webkit-animation: object_two 2s infinite;
+  animation: object_two 2s infinite;
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+#object_three {
+  -webkit-animation: object_three 2s infinite;
+  animation: object_three 2s infinite;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+#object_four {
+  -webkit-animation: object_four 2s infinite;
+  animation: object_four 2s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+#object_five {
+  -webkit-animation: object_five 2s infinite;
+  animation: object_five 2s infinite;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+#object_six {
+  -webkit-animation: object_six 2s infinite;
+  animation: object_six 2s infinite;
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+#object_seven {
+  -webkit-animation: object_seven 2s infinite;
+  animation: object_seven 2s infinite;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+#object_eight {
+  -webkit-animation: object_eight 2s infinite;
+  animation: object_eight 2s infinite;
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+#object_big {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 50px;
+  top: 50px;
+  -webkit-animation: object_big 2s infinite;
+  animation: object_big 2s infinite;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+@-webkit-keyframes object_big {
+  50% {
+    -webkit-transform: scale(0.5);
+  }
+}
+@keyframes object_big {
+  50% {
+    transform: scale(0.5);
+    -webkit-transform: scale(0.5);
+  }
+}
+@-webkit-keyframes object_one {
+  50% {
+    -webkit-transform: translate(-65px, -65px);
+  }
+}
+@keyframes object_one {
+  50% {
+    transform: translate(-65px, -65px);
+    -webkit-transform: translate(-65px, -65px);
+  }
+}
+@-webkit-keyframes object_two {
+  50% {
+    -webkit-transform: translate(0, -65px);
+  }
+}
+@keyframes object_two {
+  50% {
+    transform: translate(0, -65px);
+    -webkit-transform: translate(0, -65px);
+  }
+}
+@-webkit-keyframes object_three {
+  50% {
+    -webkit-transform: translate(65px, -65px);
+  }
+}
+@keyframes object_three {
+  50% {
+    transform: translate(65px, -65px);
+    -webkit-transform: translate(65px, -65px);
+  }
+}
+@-webkit-keyframes object_four {
+  50% {
+    -webkit-transform: translate(65px, 0);
+  }
+}
+@keyframes object_four {
+  50% {
+    transform: translate(65px, 0);
+    -webkit-transform: translate(65px, 0);
+  }
+}
+@-webkit-keyframes object_five {
+  50% {
+    -webkit-transform: translate(65px, 65px);
+  }
+}
+@keyframes object_five {
+  50% {
+    transform: translate(65px, 65px);
+    -webkit-transform: translate(65px, 65px);
+  }
+}
+@-webkit-keyframes object_six {
+  50% {
+    -webkit-transform: translate(0, 65px);
+  }
+}
+@keyframes object_six {
+  50% {
+    transform: translate(0, 65px);
+    -webkit-transform: translate(0, 65px);
+  }
+}
+@-webkit-keyframes object_seven {
+  50% {
+    -webkit-transform: translate(-65px, 65px);
+  }
+}
+@keyframes object_seven {
+  50% {
+    transform: translate(-65px, 65px);
+    -webkit-transform: translate(-65px, 65px);
+  }
+}
+@-webkit-keyframes object_eight {
+  50% {
+    -webkit-transform: translate(-65px, 0);
+  }
+}
+@keyframes object_eight {
+  50% {
+    transform: translate(-65px, 0);
+    -webkit-transform: translate(-65px, 0);
+  }
+}
 header {
   height: 168px;
 }

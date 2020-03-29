@@ -1,6 +1,7 @@
 body {
     position: relative;
     font-family: tajwal;
+    overflow: hidden;
 
     &::-webkit-scrollbar {
         background-color: #fff;
