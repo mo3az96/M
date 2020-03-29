@@ -135,6 +135,11 @@
         color: $black;
         font-family: bold;
         margin-right: 6px;
+
+        #{$rtl} & {
+            margin-right: 0;
+            margin-left: 6px;
+        }
     }
 
     .mo-old-price {

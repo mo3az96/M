@@ -114,6 +114,10 @@ header {
     .mo-cart-icon {
         margin: 0;
         position: relative;
+
+        #{$rtl} & {
+            margin: 0;
+        }
     }
 
     .count {

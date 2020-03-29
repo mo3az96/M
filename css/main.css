@@ -348,6 +348,10 @@ html[dir=rtl] .nav-li:last-of-type {
     margin: 0;
     margin-left: 20px;
   }
+  html[dir=rtl] .user-anchor.mo-menu-icon {
+    margin-right: 20px;
+    margin-left: 0;
+  }
 }
 
 .fixed-header {
@@ -401,6 +405,9 @@ nav .close-btn {
     -o-transition: all 0.5s ease-in-out;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+  }
+  html[dir=rtl] .navbar-cont .mo-navbar {
+    transform-origin: right;
   }
   .navbar-cont .mo-navbar.nav-in {
     transform: scaleX(1);
@@ -594,6 +601,10 @@ nav .close-btn {
   color: #121212;
   font-family: bold;
   margin-right: 6px;
+}
+html[dir=rtl] .product .mo-price {
+  margin-right: 0;
+  margin-left: 6px;
 }
 .product .mo-old-price {
   font-size: 18px;
@@ -1059,6 +1070,9 @@ header .mo-cart-icon {
   margin: 0;
   position: relative;
 }
+html[dir=rtl] header .mo-cart-icon {
+  margin: 0;
+}
 header .count {
   position: absolute;
   top: -3px;
@@ -1164,6 +1178,9 @@ header .count {
     margin-top: 0;
     margin-bottom: 5px;
   }
+}
+html[dir=rtl] .main-banner-head {
+  letter-spacing: unset;
 }
 
 .shop-now-btn {
