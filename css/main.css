@@ -81,6 +81,10 @@ html {
   }
 }
 
+.row {
+  overflow: hidden;
+}
+
 @font-face {
   font-family: "tajwal";
   src: url("../fonts/TAJAWAL/TAJAWAL-REGULAR.TTF");
