@@ -366,6 +366,10 @@ nav .close-btn {
   top: 25px;
   display: none;
 }
+html[dir=rtl] nav .close-btn {
+  left: 25px;
+  right: auto;
+}
 @media (max-width: 1199px) {
   nav .close-btn {
     display: flex;

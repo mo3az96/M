@@ -26,6 +26,11 @@ nav {
         top: 25px;
         display: none;
 
+        #{$rtl} & {
+            left: 25px;
+            right: auto;
+        }
+
         @include md {
             display: flex;
         }
