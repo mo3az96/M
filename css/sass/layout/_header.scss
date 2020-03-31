@@ -125,7 +125,7 @@ header {
 
     .mo-cart-icon {
         margin: 0;
-        color: blue;
+        color: yellow;
         position: relative;
 
         #{$rtl} & {
@@ -155,6 +155,6 @@ header {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        // padding-top: 2px;
+        padding-top: 2px;
     }
 }
