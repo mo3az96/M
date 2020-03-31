@@ -119,7 +119,7 @@ html {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(18, 18, 18, 0.9);
+  background-color: rgba(23, 23, 23, 0.98);
   z-index: 999;
   display: none;
 }
@@ -384,7 +384,7 @@ html[dir=rtl] nav .close-btn {
     left: 0;
     right: 0;
     z-index: 99999;
-    background-color: rgba(18, 18, 18, 0.9);
+    background-color: rgba(23, 23, 23, 0.98);
     display: none;
   }
   .navbar-cont .mo-navbar {
@@ -460,9 +460,9 @@ html[dir=rtl] nav .close-btn {
     margin: 2px 0;
   }
   .navbar-cont .mega-a {
-    color: #121212;
+    color: #a5a5a5;
   }
-  .navbar-cont .mega-a img {
+  .navbar-cont .mega-a .mega-img {
     display: none;
   }
 }
@@ -509,11 +509,11 @@ html[dir=rtl] nav .close-btn {
   }
 }
 .Product-slider .owl-dots .owl-dot {
-  background: #121212;
+  background: #c1c1c1;
   outline: none;
   border: none;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 50%;
   cursor: pointer;
   margin: 0 3px;
@@ -523,11 +523,11 @@ html[dir=rtl] nav .close-btn {
   transition: all 0.3s ease-in-out;
 }
 .Product-slider .owl-dots .owl-dot.active {
-  background: #d3b787;
+  background: #121212;
   pointer-events: none;
 }
 .Product-slider .owl-dots .owl-dot:hover {
-  background: #d3b787;
+  background: #121212;
 }
 
 .product {
@@ -733,7 +733,18 @@ html[dir=rtl] .mega-li:last-of-type {
   color: #d3b787;
 }
 .mega-a img {
+  backface-visibility: hidden;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.mega-a .mega-img {
   margin-bottom: 13px;
+  overflow: hidden;
+}
+.mega-a .mega-img:hover img {
+  transform: scale(1.05);
 }
 
 .loader {
@@ -1099,6 +1110,15 @@ header .count {
   border-radius: 50%;
   text-align: center;
   line-height: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .main-banner-cont {
@@ -1312,11 +1332,8 @@ html[dir=rtl] .main-banner-head {
     margin-top: 15px;
   }
 }
-.four-banners-cont .col-md-3:last-of-type .banner::before {
-  display: none;
-}
 .four-banners-cont .col-md-3:last-of-type .banner:hover img {
-  transform: scale(1.1);
+  transform: none;
 }
 
 .new-arrival {
@@ -1344,7 +1361,7 @@ html[dir=rtl] .main-banner-head {
 
 footer {
   margin-top: 150px;
-  padding-top: 73px;
+  padding-top: 40px;
   background-color: #121212;
 }
 @media (max-width: 992px) {

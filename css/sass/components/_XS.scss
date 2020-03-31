@@ -45,7 +45,7 @@ nav {
         left: 0;
         right: 0;
         z-index: 99999;
-        background-color: rgba($black, 0.90);
+        background-color: rgba(23, 23, 23, 0.98);
         display: none;
 
         .mo-navbar {
@@ -132,9 +132,9 @@ nav {
         }
 
         .mega-a {
-            color: $black;
+            color: #a5a5a5;
 
-            img {
+            .mega-img {
                 display: none;
             }
         }
