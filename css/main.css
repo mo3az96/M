@@ -1458,7 +1458,7 @@ footer .social-link:hover {
 }
 footer .last-footer {
   margin-top: 83px;
-  padding-bottom: 62px;
+  padding-bottom: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -1478,7 +1478,7 @@ footer .last-footer {
 }
 footer .copytight {
   display: flex;
-  color: #807f7f;
+  color: #9c9b9b;
   align-items: center;
   font-size: 15px;
   font-family: light;
