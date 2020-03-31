@@ -125,6 +125,7 @@ header {
 
     .mo-cart-icon {
         margin: 0;
+        color: red;
         position: relative;
 
         #{$rtl} & {
@@ -144,7 +145,7 @@ header {
         background-color: $gold;
         border-radius: 50%;
         text-align: center;
-        line-height: 15px;
+        // line-height: 15px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
