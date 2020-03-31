@@ -1107,7 +1107,7 @@ header .count {
   color: #121212;
   font-size: 12px;
   font-family: med;
-  background-color: #d3b787;
+  background-color: red;
   border-radius: 50%;
   text-align: center;
   line-height: 15px;
@@ -1120,7 +1120,7 @@ header .count {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding-top: 2px;
+  padding-top: 5px;
 }
 
 .main-banner-cont {

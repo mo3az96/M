@@ -142,7 +142,7 @@ header {
         color: $black;
         font-size: 12px;
         font-family: med;
-        background-color: $gold;
+        background-color: red;
         border-radius: 50%;
         text-align: center;
         line-height: 15px;
@@ -155,6 +155,6 @@ header {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        padding-top: 2px;
+        padding-top: 5px;
     }
 }
