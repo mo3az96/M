@@ -1092,7 +1092,6 @@ header .user-anchor:hover .count {
 }
 header .mo-cart-icon {
   margin: 0;
-  color: yellow;
   position: relative;
 }
 html[dir=rtl] header .mo-cart-icon {
@@ -1107,7 +1106,7 @@ header .count {
   color: #121212;
   font-size: 12px;
   font-family: med;
-  background-color: red;
+  background-color: #d3b787;
   border-radius: 50%;
   text-align: center;
   line-height: 15px;
